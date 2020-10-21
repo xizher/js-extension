@@ -8,4 +8,4 @@ const testArr2 = [
 ]
 
 
-console.log(testArr.sum())
+console.log('a'.contain(['1', 'a']))
