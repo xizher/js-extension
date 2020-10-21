@@ -80,3 +80,11 @@ interface Array {
    */
   sum () : number
 }
+
+interface Number {
+  /**
+   * 获取中文数字
+   * @returns 中文数字
+   */
+  toChineseNum () : string
+}
