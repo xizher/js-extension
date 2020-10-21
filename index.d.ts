@@ -5,6 +5,12 @@ interface Date {
    * @returns 日期格式化结果
    */
   format (fmt: string) : string
+  /**
+   * 获得当前日期的前些天或后些天
+   * @param day 日期天数间隔数，-1表示前一天，1表示后一天，默认为1
+   * @returns 新日期
+   */
+  getNextDate (day: number): Date
 }
 
 interface Array {

@@ -20,3 +20,7 @@ Date.prototype.format = function (fmt) {
   }
   return fmt
 }
+
+Date.prototype.getNextDate = function (day = 1) {
+  return new Date(this.getTime() + 24 * 60 * 60 * 1000 * day)
+}
