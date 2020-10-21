@@ -88,3 +88,12 @@ interface Number {
    */
   toChineseNum () : string
 }
+
+interface String {
+  /**
+   * 判断是否为字符串数组中的某个值
+   * @param arr 字符串数组
+   * @returns 判断结果
+   */
+  contain (arr: string[]) : boolean
+}
