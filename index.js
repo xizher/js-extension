@@ -1,4 +1,4 @@
-require('./extension/date.ext')
-require('./extension/array.ext')
-require('./extension/number.ext')
-require('./extension/string.ext')
+import './extension/date.ext'
+import './extension/array.ext'
+import './extension/number.ext'
+import './extension/string.ext'

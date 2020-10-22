@@ -1,4 +1,7 @@
-require('./index')
+import './extension/date.ext.js'
+import './extension/array.ext.js'
+import './extension/number.ext.js'
+import './extension/string.ext.js'
 
 const testArr = [0, 1, 0, 3, 4]
 const testArr2 = [
