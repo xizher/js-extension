@@ -16,3 +16,15 @@ Number.prototype.toChineseNum = function () {
   if (noWan.toString().length < 4) noWan = "0" + noWan
   return overWan ? getWan(overWan) + "万" + getWan(noWan) : getWan(num)
 }
+
+Number.prototype.floor = function () {
+  return Math.floor(this)
+}
+
+Number.prototype.ceil = function () {
+  return Math.ceil(this)
+}
+
+Number.prototype.abs = function () {
+  return Math.abs(this)
+}

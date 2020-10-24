@@ -24,3 +24,8 @@ Date.prototype.format = function (fmt) {
 Date.prototype.getNextDate = function (day = 1) {
   return new Date(this.getTime() + 24 * 60 * 60 * 1000 * day)
 }
+
+const originalGetMonth = Date.prototype.getMonth
+Date.prototype.getMonth = function () {
+  return originalGetMonth.call(this) + 1
+}

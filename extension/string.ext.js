@@ -6,3 +6,11 @@ String.prototype.contain = function (arr) {
   }
   return false
 }
+
+String.prototype.trimAll = function () {
+  return this.replace(new RegExp(' ', 'gm'), '')
+}
+
+String.prototype.replaceAll = function (searchValue, replaceValue) {
+  return this.replace(new RegExp(searchValue, 'gm'), replaceValue)
+}

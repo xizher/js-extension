@@ -11,6 +11,11 @@ interface Date {
    * @returns 新日期
    */
   getNextDate (day: number): Date
+  /**
+   * （重写）获得当前月份（真实月份）
+   * @returns 真实月份
+   */
+  getMonth () : number
 }
 
 interface Array {
@@ -47,7 +52,7 @@ interface Array {
    * 获得数组的唯一值
    * @returns 范围唯一值数组
    */
-  union () : Array<T>
+  unique () : Array<T>
   /**
    * 判断数组是否相等（针对简单数组）
    * @param array 对比的目标数组
@@ -79,6 +84,26 @@ interface Array {
    * @returns 总和
    */
   sum () : number
+  /**
+   * 获得数组最后一位对象
+   * @returns 返回数组最后一位对象
+   */
+  last () : any
+  /**
+   * 获得数字数组最大值
+   * @returns 数字数组最大值
+   */
+  max () : number
+  /**
+   * 获得数字数组最小值
+   * @returns 数字数组最小值
+   */
+  min () : number
+  /**
+   * 获得数字数组平均值
+   * @returns 数字数组平均值
+   */
+  ave () : number
 }
 
 interface Number {
@@ -87,6 +112,21 @@ interface Number {
    * @returns 中文数字
    */
   toChineseNum () : string
+  /**
+   * 向下取整
+   * @returns 向下取整结果
+   */
+  floor () : number
+  /**
+   * 向上取整
+   * @returns 向上取整结果
+   */
+  ceil () : number
+  /**
+   * 获得绝对值
+   * @returns 绝对值结果
+   */
+  abs () : number
 }
 
 interface String {
@@ -96,4 +136,26 @@ interface String {
    * @returns 判断结果
    */
   contain (arr: string[]) : boolean
+  /**
+   * 清空字符串所有空格
+   * @returns 清空所有空格后的字符串
+   */
+  trimAll () : string
+  /**
+   * 字符串替换（所有）
+   * @param searchValue 被替换的字符串
+   * @param replaceValue 替换字符串
+   * @returns 替换后的字符串
+   */
+  replaceAll (searchValue: string, replaceValue) : string
+
+}
+
+interface Math {
+  /**
+   * 获得指定范围的随机数
+   * @param minValue 最小随机数
+   * @param maxValue 最大随机数
+   */
+  random (minValue: number, maxValue: number) : number
 }

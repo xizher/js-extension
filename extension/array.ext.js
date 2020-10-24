@@ -26,7 +26,7 @@ Array.prototype.removeByValue = function (val, { many = false } = {}) {
   eval(evalStr)
 }
 
-Array.prototype.union = function () {
+Array.prototype.unique = function () {
   return [...new Set(this)]
 }
 
@@ -75,4 +75,20 @@ Array.prototype.sum = function () {
   let sum = 0
   this.forEach(item => sum += item)
   return sum
+}
+
+Array.prototype.last = function () {
+  return this[this.length - 1]
+}
+
+Array.prototype.max = function () {
+  return Math.max(...this)
+}
+
+Array.prototype.min = function () {
+  return Math.min(...this)
+}
+
+Array.prototype.ave = function () {
+  return this.sum() / this.length
 }
