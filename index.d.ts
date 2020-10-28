@@ -52,7 +52,7 @@ interface Array {
    * 获得数组的唯一值
    * @returns 范围唯一值数组
    */
-  unique () : Array<T>
+  unique () : Array<any>
   /**
    * 判断数组是否相等（针对简单数组）
    * @param array 对比的目标数组
@@ -78,7 +78,7 @@ interface Array {
    * @param propName 属性名
    * @returns 目标属性值数组
    */
-  propToArr (propName: string) : Array<T>
+  propToArr (propName: string) : Array<any>
   /**
    * 获得数字数组总和
    * @returns 总和
@@ -127,6 +127,12 @@ interface Number {
    * @returns 绝对值结果
    */
   abs () : number
+  /**
+   * 获得保留数
+   * @param count 保留的小数位
+   * @returns 保留count位小数的数
+   */
+  round (count: number) : number
 }
 
 interface String {
@@ -157,5 +163,5 @@ interface Math {
    * @param minValue 最小随机数
    * @param maxValue 最大随机数
    */
-  random (minValue: number, maxValue: number) : number
+  randomRange (minValue: number, maxValue: number) : number
 }

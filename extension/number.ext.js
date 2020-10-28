@@ -28,3 +28,7 @@ Number.prototype.ceil = function () {
 Number.prototype.abs = function () {
   return Math.abs(this)
 }
+
+Number.prototype.round = function (count) {
+  return Number(this.toFixed(count))
+}

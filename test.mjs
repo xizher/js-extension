@@ -9,5 +9,4 @@ import './extension/math.ext.js'
 
 const num = -123.2367
 
-console.log(Math.random())
-console.log(Math.random(1, 10))
+console.log(num.round(3), typeof num.round(3))
