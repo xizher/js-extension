@@ -9,4 +9,4 @@ import './extension/math.ext.js'
 
 const num = -123.2367
 
-console.log(num.round(3), typeof num.round(3))
+console.log(new Date().getMonth(true))

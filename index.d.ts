@@ -11,11 +11,6 @@ interface Date {
    * @returns 新日期
    */
   getNextDate (day: number): Date
-  /**
-   * （重写）获得当前月份（真实月份）
-   * @returns 真实月份
-   */
-  getMonth () : number
 }
 
 interface Array {

@@ -26,6 +26,8 @@ Date.prototype.getNextDate = function (day = 1) {
 }
 
 const originalGetMonth = Date.prototype.getMonth
-Date.prototype.getMonth = function () {
-  return originalGetMonth.call(this) + 1
+Date.prototype.getMonth = function (b) {
+  return b
+    ? originalGetMonth.call(this) + 1
+    : originalGetMonth.call(this)
 }
