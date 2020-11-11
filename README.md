@@ -93,6 +93,7 @@ npm config set registry https://registry.npm.taobao.org
 ```bash
 npm login
 // or 
+npm login -d
 ```
 
 ### - npm 包更新
