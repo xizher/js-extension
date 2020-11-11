@@ -151,12 +151,3 @@ interface String {
   replaceAll (searchValue: string, replaceValue) : string
 
 }
-
-interface Math {
-  /**
-   * 获得指定范围的随机数
-   * @param minValue 最小随机数
-   * @param maxValue 最大随机数
-   */
-  randomRange (minValue: number, maxValue: number) : number
-}
